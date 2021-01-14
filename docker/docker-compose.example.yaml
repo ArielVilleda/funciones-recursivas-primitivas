@@ -1,0 +1,17 @@
+version: '3' # Docker version
+
+services:
+    lisp_primitive_functions:
+        build:
+            context: ../
+            dockerfile: ./docker/Dockerfile
+        container_name: lisp_primitive_functions
+        stdin_open: true # to enable terminal docker-compose exec <container_name> bash
+        volumes:
+            - ../:/workspace/
+        networks:
+            - lisp_primitive_functions_network
+
+networks:
+    lisp_primitive_functions_network:
+        driver: bridge
