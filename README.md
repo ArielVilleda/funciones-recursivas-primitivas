@@ -19,6 +19,6 @@ Se proporciona los archivos de docker para crear un container en el cual tengamo
 Utilizamos la imagen [fukamachi/sbcl](https://hub.docker.com/r/fukamachi/sbcl "Imagen Docker Hub") con núcleo Debian.
 
 Para levantar el container seguimos los siguientes pasos:
-1. Dentro de la carpeta ./doccker, crear el archivo **docker-compose.yaml** se proporciona un ejemplo en **docker-compose.yaml.example**. Una vez hecho esto, ejecutar `docker-compose up` para construir y levantar el container
-2. Dentro de la carpeta ./doccker, para acceder a la terminal del container, ejecutar `docker-compose exec <nombre_del_container> bash`. _Si usaramos el nombre del container que esta en el archivo yaml de ejemplo, el comando sería `docker-compose exec lisp_primitive_functions bash`_
+1. Dentro de la carpeta ./docker, crear el archivo **docker-compose.yaml** se proporciona un ejemplo en **docker-compose.yaml.example**. Una vez hecho esto, ejecutar `docker-compose up` para construir y levantar el container
+2. Dentro de la carpeta ./docker, para acceder a la terminal del container, ejecutar `docker-compose exec <nombre_del_container> bash`. _Si usaramos el nombre del container que esta en el archivo yaml de ejemplo, el comando sería `docker-compose exec lisp_primitive_functions bash`_
 3. Una vez en la terminal del container, tendremos acceso a ejecutar todos los comandos que la imagen con núcleo Debian nos permita
